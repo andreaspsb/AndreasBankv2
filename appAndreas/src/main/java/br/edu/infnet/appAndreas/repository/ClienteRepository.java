@@ -1,11 +1,11 @@
 package br.edu.infnet.appAndreas.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import br.edu.infnet.appAndreas.model.domain.Cliente;
 
 @Repository
-public interface ClienteRepository extends CrudRepository<Cliente, Integer> {
+public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 
 }
